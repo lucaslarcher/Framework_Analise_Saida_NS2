@@ -1,0 +1,2 @@
+1 - As pastas presentes em "pastas vazias" deve estar presente no root
+2 - É preciso instalar o Gnuplot e o matplotlib do python

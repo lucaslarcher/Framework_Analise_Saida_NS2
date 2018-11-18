@@ -1,0 +1,11 @@
+numberPolos = 5
+colorPolos = [ red,blue,green,yellow,black ]
+numberMachinePolo = [ 30,20,47,50,30 ]
+bandwidthPolosDownload = [ 20,4,4,4,10 ] #Mb
+latencyPolos = [ 60,60,60,60,60 ] #ms
+bandwidthServer = 100 #Mb
+latencyServer = 60 #ms
+noteTime = 10*60*60
+endWork = 2*60*60
+timeToSendAfterEndWork = 60*3
+intervalsFileLost = [ 15,20 ]
