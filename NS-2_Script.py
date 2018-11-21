@@ -14,11 +14,11 @@ path = "/home/lucas/Documents/ns2/scripts/"
 
 import random
 
-typeSendData = 0 #0 - standart (machine-server), 1- instantly machine-localserver-server, 2 after machine-localserver-server
+typeSendData = 2 #0 - standart (machine-server), 2 after machine-localserver-server
 nametypeSendData = ['normal','instantly','after']
 subname = nametypeSendData[typeSendData]
-typeUpload = 0 #0 - 10%, 1 - 10% to 100%, 2 - 100% 
-nameTypeUpload = ['upload10','upload10to100','upload100']
+typeUpload = 3 #0 - 10%, 1 - 10% to 100%, 2 - 100%, 3 - 46%
+nameTypeUpload = ['upload10','upload10to100','upload100','upload46']
 nameUpload = nameTypeUpload[typeUpload]
 seeds = ["7638544921", "0416802013", "0856592017"]
 numSeeds = len(seeds)
@@ -47,6 +47,8 @@ for seed in seeds:
                 return larguraDeBanda*random.uniform(0.6,1)
         if(typeUpload == 2):
             return larguraDeBanda*random.choice([1])#same number of randons for comparation
+        if(typeUpload == 3):
+            return larguraDeBanda*random.choice([0.46])#same number of randons for comparation
 
 
 

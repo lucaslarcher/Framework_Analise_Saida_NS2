@@ -1,6 +1,6 @@
-for F in simpleOutput/packets/* 
+for F in simpleOutput/files/* 
 do
-	python gerarGraficosGnuPlotPackets.py $F
+	python gerarGraficosGnuPlotFiles.py $F
 done
 
 
