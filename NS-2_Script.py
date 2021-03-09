@@ -10,14 +10,14 @@ latenciaServer = 60 #ms
 observationTime = 10*60*60
 timework = 20*60*60
 
-path = "/home/lucas/Documents/ns2/scripts/"
+path = "/home/lucas//Documents/paper_experimento/Framework_Analise_Saida_NS2/scripts/"
 
 import random
 
-typeSendData = 2 #0 - standart (machine-server), 2 after machine-localserver-server
+typeSendData = 0 #0 - standart (machine-server), 2 after machine-localserver-server
 nametypeSendData = ['normal','instantly','after']
 subname = nametypeSendData[typeSendData]
-typeUpload = 3 #0 - 10%, 1 - 10% to 100%, 2 - 100%, 3 - 46%
+typeUpload = 0 #0 - 10%, 1 - 10% to 100%, 2 - 100%, 3 - 46%
 nameTypeUpload = ['upload10','upload10to100','upload100','upload46']
 nameUpload = nameTypeUpload[typeUpload]
 seeds = ["7638544921", "0416802013", "0856592017"]
@@ -30,7 +30,7 @@ for seed in seeds:
     filename = path+subname+nameUpload+'_scriptNS2_'+seed
     arq = open(filename+'.txt', 'w')
     
-    outputPath = "/home/lucas/Documents/ns2/nsOutput/"
+    outputPath = "/home/lucas//Documents/paper_experimento/Framework_Analise_Saida_NS2/nsOutput/"
     outputFilename = outputPath+subname+nameUpload+'_scriptNS2_'+seed
 
     random.seed(seed)

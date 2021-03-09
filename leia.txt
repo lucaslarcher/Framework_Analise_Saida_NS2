@@ -1,2 +1,7 @@
 1 - As pastas presentes em "pastas vazias" deve estar presente no root
 2 - É preciso instalar o Gnuplot e o matplotlib do python
+3 - É preciso verificar que os destinos estão corretos e exitem
+
+
+sudo apt-get install -y ns2
+

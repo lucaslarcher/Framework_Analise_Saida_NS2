@@ -284,7 +284,7 @@ print("r: "+str(r))
 arquivo.close()
 
 #saida de processamento
-path = "/home/lucas/Documents/ns2/simpleOutput/files/"
+path = "/home/lucas/Documents/paper_experimento/Framework_Analise_Saida_NS2/resultados/simpleOutput/files/"
 
 #ARQUIVOS FILES
 saidaFiles = []
@@ -315,7 +315,7 @@ if(intervals != None):
 
 
 #PACOTES PACKETS
-path = "/home/lucas/Documents/ns2/simpleOutput/packets/"
+path = "/home/lucas/Documents/paper_experimento/Framework_Analise_Saida_NS2/resultados/simpleOutput/packets/"
 arq = open(path+name+'_dados_'+seed+'.txt', 'w')
 texto = []
 
